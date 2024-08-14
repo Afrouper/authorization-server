@@ -1,0 +1,12 @@
+### Actuator
+GET http://localhost:8081/actuator/health
+
+### Well known
+GET http://localhost:9000/.well-known/oauth-authorization-server
+
+### Get Token
+POST http://localhost:9000/oauth2/token
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic memory-client secret
+
+grant_type=client_credentials
